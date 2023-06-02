@@ -53,7 +53,7 @@ print(x.grad)
 # Stop a tensor from tracking history:
 # For example during our training loop when we want to update our weights
 # then this update operation should not be part of the gradient computation
-# - x.requires_grad_(False)
+# - x.requires_grad_(False) --> # whenever there is trailing _ it implies inplace = True
 # - x.detach()
 # - wrap in 'with torch.no_grad():'
 
